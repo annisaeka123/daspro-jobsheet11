@@ -19,12 +19,12 @@ import java.util.Scanner;
 
         for (int i = 0; i < temps.length; i++) {
             System.out.println("Kota ke-" + i + ":");
-            double sum = 0.0;
+            double jml = 0.0;
             for (double temp : temps[i]) {
                 System.out.print(temp + " ");
-                sum += temp;
+                jml += temp;
             }
-            double rata = sum / temps[i].length;
+            double rata = jml / temps[i].length;
             System.out.println("\nRata-rata suhu kota ke-" + i + ": " + rata);
         }
     }
