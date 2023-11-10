@@ -16,16 +16,15 @@ import java.util.Scanner;
             }
             System.out.println();
         }
-
-        for (int i = 0; i < temps.length; i++) {
-            System.out.println("Kota ke-" + i + ":");
+        for (int i=0; i<temps.length; i++) {
+            System.out.println("Kota ke-" + (i+1) + ": ");
             double jml = 0.0;
-            for (double temp : temps[i]) {
-                System.out.print(temp + " ");
-                jml += temp;
+            for (int j=0; j<temps[0].length; j++) {
+                System.out.print(temps[i][j] + " ");
+                jml += temps[i][j];
             }
-            double rata = jml / temps[i].length;
-            System.out.println("\nRata-rata suhu kota ke-" + i + ": " + rata);
+            double rata2 = jml / temps[i].length;
+            System.out.println("Rata-rata: " + rata2);
         }
     }
 }
